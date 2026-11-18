@@ -7,3 +7,18 @@ a{color:inherit;text-decoration:none}a:focus-visible,summary:focus-visible{outli
 .project{padding:68px 0 85px}.back{font-size:.88rem;color:var(--aqua);display:inline-block;margin-bottom:36px}.project h1{font-size:clamp(2.6rem,6vw,4.7rem);max-width:970px}.lead{font-size:1.19rem;color:#bacfd7;max-width:800px;line-height:1.75}.project-layout{display:grid;grid-template-columns:220px minmax(0,1fr);gap:46px;margin-top:62px}.project-nav{align-self:start;position:sticky;top:108px;border-left:1px solid var(--line);padding-left:17px;font-size:.86rem}.project-nav a{display:block;color:var(--muted);padding:6px 0}.project-nav a:hover{color:var(--aqua)}.project-content{min-width:0}.project-content section{padding-bottom:30px;border-bottom:1px solid var(--line);margin-bottom:42px}.project-content h2{font-size:1.8rem;letter-spacing:-.035em;line-height:1.2;margin:0 0 20px}.project-content p{color:#cedce1;line-height:1.83;margin:0 0 16px}.note{border-left:3px solid var(--aqua);padding:16px 20px;background:#14323a;color:#cbdde0;border-radius:0 10px 10px 0;font-size:.89rem;line-height:1.6}.long-text{border:1px solid var(--line);border-radius:14px;background:#0b1821;padding:22px;margin:16px 0 20px;white-space:normal}.long-text p{font-size:.92rem;margin:0 0 16px}.long-text p:last-child{margin-bottom:0}.case{border:1px solid var(--line);border-radius:14px;margin:16px 0;background:#10202b;overflow:hidden}.case summary{list-style:none;cursor:pointer;padding:16px 20px;font-size:.91rem;font-weight:700}.case summary::-webkit-details-marker{display:none}.case summary:after{content:'+';float:right;color:var(--aqua);font-size:1.1rem}.case[open] summary:after{content:'−'}.case-body{border-top:1px solid var(--line);padding:22px}.small-title{font-weight:750;color:var(--aqua)!important;font-size:.7rem!important;letter-spacing:.13em;text-transform:uppercase;margin:0 0 10px!important}
 @media(max-width:760px){.wrap{width:min(100% - 36px,var(--max))}.site-header .header-inner{min-height:68px}.hero{padding:70px 0 58px}.bio{columns:1}.section{padding:46px 0}.top-links{gap:13px}.top-links>.hide-mobile{display:none}.work summary{padding:19px}.work-body{padding:0 18px 22px 44px}.project-layout{display:block;margin-top:38px}.project-nav{display:none}.project{padding:45px 0}.foot-inner{display:block}.foot-inner span{display:block;margin-bottom:9px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+/* Behavioral Causation: side-by-side persona demonstrations */
+.persona-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px;align-items:start;margin-top:28px}
+.persona-panel{min-width:0}
+.persona-panel h3{font-size:1.35rem;letter-spacing:-.025em;line-height:1.3;margin:0 0 6px}
+.project-content .persona-subtitle{font-size:.9rem;color:var(--muted);margin-bottom:19px;min-height:2.4em}
+.persona-panel .persona-instructions{margin:10px 0 24px;overflow-wrap:anywhere}
+.persona-panel .persona-instructions p{font-size:.89rem;line-height:1.7}
+.conversation-heading{font-size:1rem;margin:0 0 12px;color:var(--ink)}
+.persona-panel .case{margin:12px 0}
+.persona-panel .case summary{line-height:1.5;overflow-wrap:anywhere}
+.persona-panel .case-body{padding:18px}
+.persona-panel .case-body p{font-size:.91rem;overflow-wrap:anywhere;line-height:1.75}
+.evaluation-placeholder{font-style:italic;color:var(--muted)!important}
+@media(max-width:1020px){.persona-grid{grid-template-columns:1fr;gap:35px}.project-content .persona-subtitle{min-height:0}}
