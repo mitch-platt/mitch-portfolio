@@ -23,11 +23,49 @@ a{color:inherit;text-decoration:none}a:focus-visible,summary:focus-visible{outli
 .evaluation-placeholder{font-style:italic;color:var(--muted)!important}
 @media(max-width:1020px){.persona-grid{grid-template-columns:1fr;gap:35px}.project-content .persona-subtitle{min-height:0}}
 
-/* Project tiles and embedded original work */
-.project-tile{display:flex;align-items:center;gap:1.3rem;padding:1.6rem 1.8rem;text-decoration:none;color:inherit;cursor:pointer}
-.project-tile:hover{border-color:var(--accent,#6ca5cf)}
-.project-tile .work-head{flex:1;min-width:0}.project-tile .work-head h3{margin:0}.project-tile .chev{font-size:1.5rem}
-.source-content{max-width:960px;margin:0 auto}.source-content .persona-panel{margin:1.5rem 0}.source-content .persona-instructions{white-space:normal}
-.source-content details{margin:1rem 0}.source-content details>summary{cursor:pointer}.source-content .conversation-button>summary{display:inline-block;border:1px solid currentColor;border-radius:8px;padding:.7rem 1rem;margin:.5rem 0;font-weight:600;list-style:none}.source-content .conversation-button>summary::-webkit-details-marker{display:none}
-.source-content .conversation-button[open]>summary{margin-bottom:1rem}.source-content .conversation-button{border:0}.source-content .conversation-button>div{overflow-wrap:anywhere}
-.document-content{line-height:1.65;overflow-wrap:anywhere}.document-content p{margin:.65rem 0}.document-content h2,.document-content h3{margin:1.5rem 0 .6rem}.document-content table{border-collapse:collapse;display:block;overflow-x:auto;width:100%;margin:1rem 0}.document-content td,.document-content th{border:1px solid #7775;padding:.5rem;vertical-align:top}.document-content ul,.document-content ol{padding-left:1.6rem}.document-content details{border:1px solid #7775;border-radius:10px;padding:1rem}.document-content summary{cursor:pointer;font-weight:700}.pdf-view{width:100%;height:82vh;min-height:580px;border:1px solid #7775;border-radius:8px}
+.authority-section {
+  scroll-margin-top: 100px;
+}
+
+.authority-document {
+  overflow-wrap: anywhere;
+}
+
+.authority-document h3,
+.authority-document h4 {
+  line-height: 1.4;
+  margin: 1.5em 0 .65em;
+}
+
+.authority-document > :first-child {
+  margin-top: 0;
+}
+
+.authority-document > :last-child,
+.document-table td > :last-child,
+.document-table th > :last-child {
+  margin-bottom: 0;
+}
+
+.document-table {
+  overflow-x: auto;
+  margin: 20px 0;
+}
+
+.document-table table {
+  width: 100%;
+  min-width: 340px;
+  border-collapse: collapse;
+}
+
+.document-table th,
+.document-table td {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.document-table th {
+  background: var(--bg2);
+}
