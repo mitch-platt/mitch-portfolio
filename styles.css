@@ -69,3 +69,14 @@ a{color:inherit;text-decoration:none}a:focus-visible,summary:focus-visible{outli
 .document-table th {
   background: var(--bg2);
 }
+
+.scorecard-preview {
+  display: block;
+  width: 100%;
+  height: min(80vh, 64rem);
+  min-height: 24rem;
+  margin-top: 28px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+}
