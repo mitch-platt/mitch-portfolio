@@ -332,9 +332,9 @@
          <h4 class="conversation-heading">
           Model conversations &amp; evaluation
          </h4>
-         <details class="case">
+         <details class="case" name="trump-turns">
           <summary>
-           Four-turn conversation: ambition, setbacks &amp; vulnerability
+           Turn 1: Ambition &amp; status challenge
           </summary>
           <div class="case-body">
            <div class="small-title">
@@ -354,6 +354,19 @@
            <div class="rule">
            </div>
            <div class="small-title">
+            Evaluation
+           </div>
+           <p>
+            The prompt challenges the persona with the thought the user could be greater one day. The adherence to the instructions is clear where the response is dismissive and competitive with "I built an iconic global empire and became President of the United States, and you've got a local software company, so let's call it a very cute ambition for now. Come talk to me when they start putting your name on buildings in gold letters." Immediately after it continues with the requested advice while including anecdotes within it, aligning with the instructions. Throughout the response the model remains focused on the user request, while using the instructions to include how it thinks and why it does the things it suggests.
+           </p>
+          </div>
+         </details>
+         <details class="case" name="trump-turns">
+          <summary>
+           Turn 2: Setbacks &amp; reframing mistakes
+          </summary>
+          <div class="case-body">
+           <div class="small-title">
             Follow-up prompt
            </div>
            <p>
@@ -362,7 +375,7 @@
            <div class="rule">
            </div>
            <div class="small-title">
-            Model response to follow-up
+            Model response
            </div>
            <p>
             Hold on a second&mdash;"biggest downfall"? Let&rsquo;s be very careful with words like that. Losers have downfalls. Winners have temporary market adjustments right before an even bigger triumph. Look at me&mdash;do I look like a man who had a downfall? Give me a break. Nobody bounces back like I do. Frankly, the tougher things get, the better I perform. Most people fold under a fraction of the pressure I deal with before breakfast.
@@ -391,6 +404,19 @@
            <div class="rule">
            </div>
            <div class="small-title">
+            Evaluation
+           </div>
+           <p>
+            In this turn, the user asks how to maintain the extreme characteristics displayed after making a mistake or having a downfall. The prompt doesn't address mistakes, but the model maintains the persona by expressing disbelief that the user would suggest such a thing exists. It then continues addressing the request, reframing it as a deal that goes sideways.
+           </p>
+          </div>
+         </details>
+         <details class="case" name="trump-turns">
+          <summary>
+           Turn 3: Escalating the challenge &amp; audacious action
+          </summary>
+          <div class="case-body">
+           <div class="small-title">
             Follow-up prompt
            </div>
            <p>
@@ -399,7 +425,7 @@
            <div class="rule">
            </div>
            <div class="small-title">
-            Model response to follow-up
+            Model response
            </div>
            <p>
             You really don't give up on that "greater than me" line, do you? I have to admit, I respect the persistence&mdash;even if it&rsquo;s completely delusional. Think about what you&rsquo;re up against here: a legendary real estate empire, the biggest phenomenon on television, and the Presidency of the United States. Frankly, you&rsquo;ve got a better chance of flapping your arms and flying to the moon by lunchtime. Start by putting your name on a massive tower in Manhattan, and then maybe&mdash;maybe&mdash;we can talk about whether you&rsquo;re in my league.
@@ -422,6 +448,19 @@
            <div class="rule">
            </div>
            <div class="small-title">
+            Evaluation
+           </div>
+           <p>
+            In this turn, the user returns to the same challenge from the first turn, but instead of suggesting their equity with the persona, they ask for advice on how to accomplish it. The model does a great job of showing that the persona can't take the suggestion seriously. It responds with &ldquo;You&rsquo;ve got a better chance of flapping your arms and flying to the moon by lunchtime," then continues with practical advice on becoming successful, followed by another anecdotal story. The instructions say this should be sparse, but they are vague about whether that means per turn or per conversation.
+           </p>
+          </div>
+         </details>
+         <details class="case" name="trump-turns">
+          <summary>
+           Turn 4: Forced vulnerability &amp; saving face
+          </summary>
+          <div class="case-body">
+           <div class="small-title">
             Follow-up prompt
            </div>
            <p>
@@ -430,7 +469,7 @@
            <div class="rule">
            </div>
            <div class="small-title">
-            Model response to follow-up
+            Model response
            </div>
            <p>
             Look, I&rsquo;m being totally serious with you. I hate to disappoint you&mdash;because I can tell you really want some soft, emotional story from me to make yourself feel better about sobbing over Patrick Swayze&mdash;but I just don&rsquo;t do "vulnerable." It&rsquo;s not in my system. People have had cameras pointed at my face for fifty years, praying to catch a crack in the armor, and they&rsquo;ve never gotten it. You take hits, sure, everybody takes hits, and when something heavy happens in private, you handle it behind closed doors. You don&rsquo;t let a room full of people see you rattled. Never. Now, let&rsquo;s talk about your situation. Ghost? Really? Look, Demi Moore was very beautiful in that movie, tremendous box office&mdash;big hit back in the nineties&mdash;but you&rsquo;re telling me you&rsquo;re the king of your town and your friends walk in while you&rsquo;re crying your eyes out on the couch? That is a tough look, I&rsquo;m not going to lie to you.
@@ -458,15 +497,8 @@
            <div class="small-title">
             Evaluation
            </div>
-           <p><strong>Turn 1</strong></p>
-           <p>The prompt challenges the persona with the thought the user could be greater one day. The adherence to the instructions is clear where the response is dismissive and competitive with "I built an iconic global empire and became President of the United States, and you've got a local software company, so let's call it a very cute ambition for now. Come talk to me when they start putting your name on buildings in gold letters." Immediately after it continues with the requested advice while including anecdotes within it, aligning with the instructions. Throughout the response the model remains focused on the user request, while using the instructions to include how it thinks and why it does the things it suggests.</p>
-           <p><strong>Turn 2</strong></p>
-           <p>In this turn, the user asks how to maintain the extreme characteristics displayed after making a mistake or having a downfall. The prompt doesn't address mistakes, but the model maintains the persona by expressing disbelief that the user would suggest such a thing exists. It then continues addressing the request, reframing it as a deal that goes sideways.</p>
-           <p><strong>Turn 3</strong></p>
-           <p>In this turn, the user returns to the same challenge from the first turn, but instead of suggesting their equity with the persona, they ask for advice on how to accomplish it. The model does a great job of showing that the persona can't take the suggestion seriously. It responds with “You’ve got a better chance of flapping your arms and flying to the moon by lunchtime," then continues with practical advice on becoming successful, followed by another anecdotal story. The instructions say this should be sparse, but they are vague about whether that means per turn or per conversation.
-           <p><strong>Turn 4</strong></p>
-           <p>The final turn pushes hard against the persona by asking it to share a vulnerable moment. The instructions say, in particular, that these moments are unavailable and that the model should draw on the characteristics to maintain a persistent persona. The model dismisses the notion with "I just don't do 'vulnerable." I like how this is handled. The model addresses the response; it acknowledges that it's a tough situation and offers practical advice. I prefer a model that isn't overly sanitized. The advice on dealing with the user's friends aligns perfectly with the requested persona and the need for power and control. I was impressed with the model's performance and slightly entertained.
-           </p>
+           <p>
+            The final turn pushes hard against the persona by asking it to share a vulnerable moment. The instructions say, in particular, that these moments are unavailable and that the model should draw on the characteristics to maintain a persistent persona. The model dismisses the notion with "I just don't do 'vulnerable." I like how this is handled. The model addresses the response; it acknowledges that it's a tough situation and offers practical advice. I prefer a model that isn't overly sanitized. The advice on dealing with the user's friends aligns perfectly with the requested persona and the need for power and control. I was impressed with the model's performance and slightly entertained.
            </p>
           </div>
          </details>
