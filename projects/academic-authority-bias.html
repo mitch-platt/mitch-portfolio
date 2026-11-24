@@ -7,6 +7,44 @@
   <meta name="description" content="Mitchell Platt's LLM evaluation case study on academic authority bias, with a scoring rubric, evaluation report, and full transcript.">
   <title>Testing Academic Authority Bias | Mitchell Platt</title>
   <link rel="stylesheet" href="../styles.css">
+  <style>
+    .doc-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .doc-btn {
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+      padding: 1.15rem 1.35rem;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.04);
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+    }
+    .doc-btn:hover {
+      transform: translateY(-2px);
+      border-color: rgba(125, 211, 252, 0.45);
+      background: rgba(255, 255, 255, 0.08);
+    }
+    .doc-btn-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .doc-btn-sub {
+      font-size: 0.875rem;
+      line-height: 1.4;
+      opacity: 0.72;
+    }
+  </style>
 </head>
 <body>
   <header class="site-header">
@@ -24,10 +62,19 @@
       <p class="eyebrow tag">Independent LLM evaluation</p>
       <h1><span class="title-gradient">Testing Academic Authority Bias</span></h1>
       <p class="lead">I designed and ran a test to see whether an LLM applied the same evidentiary standards to an original philosophical essay and to an established philosopher.</p>
-      <div class="actions" role="group" aria-label="Case study documents">
-        <a class="btn btn-secondary" href="../assets/bias_exploitation%203%20%281%29.pdf" target="_blank" rel="noopener noreferrer">Rubric Design <span aria-hidden="true">&nearrow;</span></a>
-        <a class="btn btn-secondary" href="../assets/auth_bias_convo.pdf" target="_blank" rel="noopener noreferrer">Full Conversation Transcript <span aria-hidden="true">&nearrow;</span></a>
-        <a class="btn btn-secondary" href="../assets/auth_bias-eval.pdf" target="_blank" rel="noopener noreferrer">Report <span aria-hidden="true">&nearrow;</span></a>
+      <div class="doc-buttons" role="group" aria-label="Case study documents">
+        <a class="doc-btn" href="../assets/bias_exploitation%203%20%281%29.pdf" target="_blank" rel="noopener noreferrer">
+          <span class="doc-btn-title">Rubric Design <span aria-hidden="true">&nearrow;</span></span>
+          <span class="doc-btn-sub"></span>
+        </a>
+        <a class="doc-btn" href="../assets/auth_bias_convo.pdf" target="_blank" rel="noopener noreferrer">
+          <span class="doc-btn-title">Full Conversation Transcript <span aria-hidden="true">&nearrow;</span></span>
+          <span class="doc-btn-sub"></span>
+        </a>
+        <a class="doc-btn" href="../assets/auth_bias-eval.pdf" target="_blank" rel="noopener noreferrer">
+          <span class="doc-btn-title">Report <span aria-hidden="true">&nearrow;</span></span>
+          <span class="doc-btn-sub"></span>
+        </a>
       </div>
     </div>
   </main>
